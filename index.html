@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="theme-color" content="#784D3C" />
+    <title>Blog Cafe ☕</title>
+
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo no-margin centrar-texto" href="index.html">
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">Cafe</span> </h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Cafe</h2>
+            <p class="no-margin">Aprende de los mejores expertos con las mejores recetas y consejos</p>
+        </div>
+
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada no-margin">
+                <div class="entrada__imagen">
+                    <!--Cargar imagenes menos pesadas en formato webp-->
+                    <picture><!--Agregar esta etiqueta de picture-->
+                        <source srcset="img/blog1.webp" type="image/webp"><!--y des pues source con valores srcset y type-->
+                        <img src="/img/blog1.webp" alt="Cafe en tasa">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4>Tipos de Cafe</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo qui sapiente dignissimos illo culpa eos placeat ipsam molestiae tenetur in error inventore, impedit animi voluptate debitis a nemo! Eligendi eaque tempora similique laborum voluptate eum minima aliquid ea amet ducimus in fugit ipsum adipisci necessitatibus nulla voluptatibus, cupiditate consectetur illum.</p>
+                    <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada no-margin">
+                <div class="entrada__imagen">
+                    <picture><!--Agregar esta etiqueta de picture-->
+                        <source srcset="img/blog2.webp" type="image/webp"><!--y des pues source con valores srcset y type-->
+                        <img src="/img/blog2.webp" alt="Cafe en tasa">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4>Recetas de Cafe</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo qui sapiente dignissimos illo culpa eos placeat ipsam molestiae tenetur in error inventore, impedit animi voluptate debitis a nemo! Eligendi eaque tempora similique laborum voluptate eum minima aliquid ea amet ducimus in fugit ipsum adipisci necessitatibus nulla voluptatibus, cupiditate consectetur illum.</p>
+                    <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada no-margin">
+                <div class="entrada__imagen">
+                    <picture><!--Agregar esta etiqueta de picture-->
+                        <source srcset="img/blog3.webp" type="image/webp"><!--y des pues source con valores srcset y type-->
+                        <img src="/img/blog3.webp" alt="Cafe en tasa">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4>Beneficios del Cafe</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo qui sapiente dignissimos illo culpa eos placeat ipsam molestiae tenetur in error inventore, impedit animi voluptate debitis a nemo! Eligendi eaque tempora similique laborum voluptate eum minima aliquid ea amet ducimus in fugit ipsum adipisci necessitatibus nulla voluptatibus, cupiditate consectetur illum.</p>
+                    <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
+                </div>
+            </article>
+
+        </main>
+
+        <aside class="sidebar">
+
+            <h3>Nuestro Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso"></li>
+                <h4 class="no-margin">Recetas de Cafe para principiantes</h4>
+                <p class="widget--curso__label">Pecio: <span>Gratis</span> </p>
+                <p class="widget--curso__info">Cupo: <span>20</span> </p>
+                <a class="boton boton--secundario" href="cursos.html">Ver curso</a>
+            </ul>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso"></li>
+                <h4 class="no-margin">Tecnicas de extraccion de Cafe</h4>
+                <p class="widget--curso__label">Pecio: <span>Gratis</span> </p>
+                <p class="widget--curso__info">Cupo: <span>20</span> </p>
+                <a class="boton boton--secundario" href="cursos.html">Ver curso</a>
+            </ul>
+
+        </aside>
+
+    </div>
+
+    <footer class="foter">
+
+        <div class="contenedor__foter">
+            <div class="barra__foter">
+                <h1 class="foter__logo no-margin">Blog<span class="logo__bold">Cafe</span> </h1>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
